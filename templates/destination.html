@@ -1,0 +1,251 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %} 
+    Veena Tours & Travel:Destination 
+{% endblock %}
+
+{% block content %}
+
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Destination</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="{% url 'home' %}">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Destination</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Booking Start 
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Destination</option>
+                                        <option value="1">Destination 1</option>
+                                        <option value="2">Destination 1</option>
+                                        <option value="3">Destination 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date2" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Duration</option>
+                                        <option value="1">Duration 1</option>
+                                        <option value="2">Duration 1</option>
+                                        <option value="3">Duration 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Booking End -->
+    
+
+    <!-- Delhi Destination -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{% static 'images/delhi.jpg' %}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+                        <h1 class="mb-3">Delhi: India’s Capital of Contrasts</h1>
+                        <p>Delhi, India’s capital, is a city of remarkable contrasts – where ancient monuments stand proudly beside modern landmarks. It’s the perfect starting point for your journey, offering a rich tapestry of history, culture, and urban excitement.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Red Fort: A UNESCO World Heritage Site and a symbol of India’s rich Mughal past.</li>
+                            <li class="list-group-item">Qutub Minar: The tallest brick minaret in the world, standing as a testament to Delhi’s Islamic history.</li>
+                            <li class="list-group-item">India Gate: A beautiful war memorial dedicated to the Indian soldiers who sacrificed their lives in World War I.</li>
+                            <li class="list-group-item">Humayun’s Tomb: The precursor to the Taj Mahal, this monument is a stunning example of Mughal architecture.</li>
+                            <li class="list-group-item">Chandni Chowk: A bustling market where you can enjoy a rickshaw ride, shop for textiles, and taste the finest street food.</li>
+                            <li class="list-group-item">Unique Experiences:</li>
+                            <ul class="list-group ms-3">
+                                <li class="list-group-item">Take a heritage walk through Old Delhi to see traditional markets and discover the city’s Mughal past.</li>
+                                <li class="list-group-item">Visit the serene Lotus Temple and the modern Akshardham Temple, experiencing the spiritual diversity of the city.</li>
+                            </ul>
+                        </ul>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-1.jpg' %}" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about1-2.jpg' %}" alt="">
+                            </div>
+                        </div>
+                         <!-- <a href="" class="btn btn-primary mt-1">Book Now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delhi Destination End -->
+
+    <!-- Jaipur Destination -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{% static 'images/about.jpg' %}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+                        <h1 class="mb-3">Jaipur: The Majestic Jewel of Rajasthan</h1>
+                        <p>Known for its rich history, stunning architecture, and vibrant culture, Jaipur is the gateway to Rajasthan’s royal heritage. Often called the “Pink City” due to the distinct color of its buildings, Jaipur blends old-world charm with a contemporary vibrancy</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Amber Fort: A breathtaking blend of Mughal and Rajput architecture, set atop a hill with stunning views of the city.</li>
+                            <li class="list-group-item">Hawa Mahal: A palace designed for royal women to observe street life, with its intricate lattice windows.</li>
+                            <li class="list-group-item">City Palace: A magnificent complex showcasing royal art, architecture, and courtyards.</li>
+                            <li class="list-group-item">Jantar Mantar: A remarkable astronomical observatory featuring ancient instruments used to study the stars.</li>
+                            <li class="list-group-item">Nahargarh Fort: Offering panoramic views of Jaipur, this fort is perfect for a serene evening.</li>
+                            <li class="list-group-item">Unique Experiences:</li>
+                            <ul class="list-group ms-3">
+                                <li class="list-group-item">Explore the lively Johari Bazaar and Bapu Bazaar, where you can shop for gemstones, textiles, and handicrafts.</li>
+                                <li class="list-group-item">Enjoy a traditional Rajasthani meal at Chokhi Dhani, an ethnic village resort with folk music and dance.</li>
+                            </ul>
+                        </ul>
+                        
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-1.jpg' %}" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-2.jpg' %}" alt="">
+                            </div>
+                        </div>
+                         <!-- <a href="" class="btn btn-primary mt-1">Book Now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jaipur Destination End -->
+
+    <!-- Agra Destination -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{% static 'images/tajmahal1.jpg' %}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+                        <h1 class="mb-3">Agra: The City of Eternal Love</h1>
+                        <p>Agra is home to one of the most iconic monuments in the world – the Taj Mahal. But this city offers more than just the Taj; it’s a treasure trove of Mughal architecture and history that will leave you spellbound</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Taj Mahal: A symbol of eternal love, this architectural marvel is considered one of the Seven Wonders of the World.</li>
+                            <li class="list-group-item">Agra Fort: A majestic fort built in red sandstone, with stunning courtyards and views of the Taj Mahal from across the Yamuna River.</li>
+                            <li class="list-group-item">Mehtab Bagh: A beautiful garden offering stunning views of the Taj Mahal, especially at sunset.</li>
+                            <li class="list-group-item">Fatehpur Sikri: A former Mughal capital, this ghost city is a UNESCO World Heritage Site filled with grand palaces and mosques.</li>
+                            <li class="list-group-item">Unique Experiences:</li>
+                            <ul class="list-group ms-3">
+                                <li class="list-group-item">Visit the Tomb of Itimad-ud-Daula, also known as the “Baby Taj,” and marvel at its intricate marble work.</li>
+                                <li class="list-group-item">Enjoy traditional Mughlai cuisine, including delicacies like kebabs and biryani.</li>
+                            </ul>
+                        </ul>
+                        
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-1.jpg' %}" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-2.jpg' %}" alt="">
+                            </div>
+                        </div>
+                         <!-- <a href="" class="btn btn-primary mt-1">Book Now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agra Destination End -->
+
+    <!-- Varanasi Destination -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{% static 'images/varanasi.jpg' %}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+                        <h1 class="mb-3">Varanasi: The Spiritual Heart of India</h1>
+                        <p>Varanasi, also known as Kashi, is one of the oldest living cities in the world and a center for Hindu spirituality. Situated on the banks of the sacred River Ganges, Varanasi offers an unparalleled spiritual experience, where every street and ghat has a story to tell</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Ghats of Varanasi: The riverfront steps leading to the Ganges are the heart of life in Varanasi. The most famous is Dashashwamedh Ghat, where pilgrims come to bathe in the holy waters.</li>
+                            <li class="list-group-item">Kashi Vishwanath Temple: Dedicated to Lord Shiva, this temple is one of the holiest sites for Hindus.</li>
+                            <li class="list-group-item">Sarnath: The place where Lord Buddha gave his first sermon, making it one of the most important Buddhist pilgrimage sites.</li>
+                            <li class="list-group-item">Manikarnika Ghat: A sacred cremation ghat, reflecting the cycle of life and death in Varanasi.</li>
+                            <li class="list-group-item">Unique Experiences:</li>
+                            <ul class="list-group ms-3">
+                                <li class="list-group-item">Witness the Ganga Aarti: A mesmerizing evening ritual on the ghats, where devotees light lamps and chant in unison to honor the River Ganges.</li>
+                                <li class="list-group-item">Take a peaceful boat ride on the Ganges at sunrise for an unforgettable view of the ghats and temples.</li>
+                                <li class="list-group-item">Explore the narrow lanes of Varanasi, filled with temples, markets, and the scent of incense.</li>
+                            </ul>
+                        </ul>
+                        
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-1.jpg' %}" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="{% static 'images/about-2.jpg' %}" alt="">
+                            </div>
+                        </div>
+                         <!-- <a href="" class="btn btn-primary mt-1">Book Now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Varanasi Destination End -->
+
+    {% endblock %}
